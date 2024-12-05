@@ -1,0 +1,67 @@
+---
+import { Icon } from "astro-icon/components";
+import Image from "astro/components/Image.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section
+    class="flex justify-center items-center h-screen gap-5 md:gap-2 flex-col md:flex-row"
+  >
+    <Image
+      loading="eager"
+      width={128}
+      height={128}
+      src="/logo/hcs-white.png"
+      alt="HCS Logo White Dragon"
+      class="w-32"
+    />
+    <div>
+      <div class="space-y-2 text-center md:text-left">
+        <h1 class="font-bold text-3xl tracking-wider">Heroes Cyber Security</h1>
+        <p class="text-zinc-300">
+          Cyber Security community from the Sepuluh Nopember Institute of
+          Technology.
+        </p>
+      </div>
+      <div class="mt-5 flex items-center gap-2 justify-center md:justify-start">
+        <a
+          aria-label="LinkedIn"
+          href="https://www.linkedin.com/company/heroes-cyber-security"
+          class="hover:text-blue-500"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Icon name="mdi:linkedin" class="w-5 h-5" />
+        </a>
+        <a
+          aria-label="Instagram"
+          href="https://www.instagram.com/hcs_its/"
+          class="hover:text-blue-500"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Icon name="mdi:instagram" class="w-5 h-5" />
+        </a>
+        <a
+          aria-label="Github"
+          href="https://github.com/Heroes-Cyber-Security/"
+          class="hover:text-blue-500"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Icon name="mdi:github" class="w-5 h-5" />
+        </a>
+        <a
+          aria-label="CTFTime"
+          href="https://ctftime.org/team/70159"
+          class="hover:text-blue-500"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Icon name="mdi:flag" class="w-5 h-5" />
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
